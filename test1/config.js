@@ -37,3 +37,32 @@ navigator.mediaDevices.enumerateDevices()
   .catch(error => {
     console.error('Error accessing media devices:', error);
   });
+
+  navigator.mediaDevices
+  .selectAudioOutput()
+  .then((device) => {
+    console.log("Audio devices??:" + device);
+    console.log(`${device.kind}: ${device.label} id = ${device.deviceId}`);
+  })
+  .catch((err) => {
+    console.error(`${err.name}: ${err.message}`);
+  });
+
+  const constraints = {
+    audio: true,
+    video: { width: 1280, height: 720 },
+  };
+  
+  navigator.mediaDevices
+    .getUserMedia(constraints)
+    .then((mediaStream) => {
+      const video = document.querySelector("video");
+      video.srcObject = mediaStream;
+      video.onloadedmetadata = () => {
+        video.play();
+      };
+    })
+    .catch((err) => {
+      // always check for errors at the end.
+      console.error(`${err.name}: ${err.message}`);
+    });
