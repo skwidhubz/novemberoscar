@@ -1,3 +1,5 @@
+console.log(navigator);
+console.log("Connection: " + navigator.connection.effectiveType);
 console.log("User Agent: " + navigator.userAgent);  
 console.log("OS: " + navigator.platform);   
 console.log("Language: " + navigator.language);  
