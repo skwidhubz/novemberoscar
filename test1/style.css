@@ -1,0 +1,23 @@
+* {
+
+}
+
+
+#main-module {
+display: flex;
+flex-direction: row;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: black;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: black;
+}

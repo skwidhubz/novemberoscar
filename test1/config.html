@@ -4,10 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>config test</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <script src="/config.js">
+    <svg width="0" height="0" style="position: absolute;">
+        <defs>
+          <symbol id="my-rect" viewBox="0 0 220 120">
+            <rect width="200" height="100" x="10" y="10" rx="20" ry="20" fill="blue" />
+          </symbol>
+        </defs>
+      </svg>
+      
+
+
+    <div id="main-container">
+        <div id="main-module">
+            <div id="left">
+                <svg width="50" height="50"m class="push-button"><use xlink:href="#my-rect" /></svg>
+                <svg width="50" height="50"m class="push-button"><use xlink:href="#my-rect" /></svg>
+                <svg width="50" height="50"m class="push-button"><use xlink:href="#my-rect" /></svg>
+                <svg width="50" height="50"m class="push-button"><use xlink:href="#my-rect" /></svg>
+                <svg width="50" height="50"m class="push-button"><use xlink:href="#my-rect" /></svg>
+                <svg width="50" height="50"m class="push-button"><use xlink:href="#my-rect" /></svg>
+                <svg width="50" height="50"m class="push-button"><use xlink:href="#my-rect" /></svg>
+                
+            </div>
+            <div id="right">
+                <svg width="50" height="50"m class="push-button"><use xlink:href="#my-rect" /></svg>
+                <svg width="50" height="50"m class="push-button"><use xlink:href="#my-rect" /></svg>
+                <svg width="50" height="50"m class="push-button"><use xlink:href="#my-rect" /></svg>
+                <svg width="50" height="50"m class="push-button"><use xlink:href="#my-rect" /></svg>
+
+            </div>
+
+        </div>
+    </div>
+    
+
+
+    <script src="config.js">
         
     </script>
     
