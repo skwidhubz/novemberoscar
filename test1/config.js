@@ -1,7 +1,4 @@
-let pushButton = document.getElementsByClassName("push-button");
-
 function buttonPress () {
-  pushButton.click(console.log("yeebs"));
+  console.log("yeebs");
+  console.log(navigator.mediaDevices.getUserMedia());
 }
-
-buttonPress()
